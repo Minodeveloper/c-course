@@ -10,8 +10,8 @@ boolean:
 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
 enums:
 	gcc-11 -Wall -std=c99 ./enums.c -o  enums.exec
-# boolean:
-# 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
+typedef:
+	gcc-11 -Wall -std=c99 ./typedef.c -o  typedef.exec
 # boolean:
 # 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
 # boolean:
@@ -30,6 +30,8 @@ runboolean:
 	./boolean.exec
 runenums:
 	./enums.exec
+runtypedef:
+	./typedef.exec
 
 clean:
 	rm ./*.exec
