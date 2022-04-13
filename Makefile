@@ -1,3 +1,5 @@
+challengespace:
+	gcc-11 -Wall -std=c99 ./challengespace.c -o challengespace.exec
 example1: 
 	gcc-11 -Wall -std=c99 ./example-1.c -o  example-1.exec 
 example2:
@@ -17,7 +19,8 @@ typedef:
 # boolean:
 # 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
 	
-
+runchallengespace:
+	./challengespace.exec
 run1:
 	./example-1.exec
 run2:
