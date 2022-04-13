@@ -1,3 +1,5 @@
+constants:
+	gcc-11 -Wall -std=c99 ./constants.c -o constants.exec
 challengespace:
 	gcc-11 -Wall -std=c99 ./challengespace.c -o challengespace.exec
 example1: 
@@ -18,7 +20,9 @@ typedef:
 # 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
 # boolean:
 # 	gcc-11 -Wall -std=c99 ./boolean.c -o  boolean.exec
-	
+
+runconstants:
+	./constants.exec	
 runchallengespace:
 	./challengespace.exec
 run1:
