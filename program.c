@@ -7,7 +7,7 @@ int main(void)
 {
   // int variable = 0;
 
-   printf("Size = %lu bytes\n", sizeof (int16_t));
+   printf("\n%d\n", true == -1);
 
     return EXIT_SUCCESS;
 }
