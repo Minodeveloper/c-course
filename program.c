@@ -2,12 +2,13 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <stddef.h>
 
 int main(void)
 {
-  // int variable = 0;
 
-   printf("\n%d\n", true == -1);
+  char* pointer = NULL;
+
 
     return EXIT_SUCCESS;
 }
