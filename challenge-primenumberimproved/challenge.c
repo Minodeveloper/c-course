@@ -10,7 +10,7 @@ void printPrimeArray(int array[])
     while( array[loopindex] != 0) 
     {
         // printf("storageprime[%d] = %d\t", loopindex, array[loopindex]);
-        printf("%d\t", array[loopindex]);
+        printf("%10d\t", array[loopindex]);
         loopindex++;
     }
     printf("\nstored %d Prime Numbers.\n", loopindex);
