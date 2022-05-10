@@ -4,18 +4,33 @@
 #include <stdint.h>
 #include <stddef.h>
 
+void findOccurances(char array[], char tofind, long size )
+{
+  printf("%s\n", array);
+  for(int i = 0; i < size; i++)
+  {
+    if(array[i] == tofind)
+    {
+      printf("^");
+
+    }
+    else{
+      printf(" ");
+    }
+  }
+  printf("\n");
+}
+
 int main(void)
 {
+  char word[] = "I love programming!\0";
+  // printf("%s\n", word);
+  findOccurances(word, 'o', sizeof(word));
+  findOccurances(word, 'm', sizeof(word));
+  findOccurances(word, 'r', sizeof(word));
+  findOccurances(word, 'g', sizeof(word));
   
-  int arr[5] = {1,2,3,4,5};
-  int *address =  &arr[3];
-
-  for(int index = 0; index < 5; index++)
-  {
-    printf("arr[%d] = %d\n", index, arr[index]);
-  }
-
-  printf("pointer number %d adress %p\n", *address, address);
+  
 
     return EXIT_SUCCESS;
 }
